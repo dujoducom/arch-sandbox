@@ -1,0 +1,24 @@
+<Alloy>
+
+	<Collection src="audioStops"/>
+
+	<Window id="index" class="container" title="Architectural Guide">
+
+		<ListView id="audioStopList" defaultItemTemplate="stopTemplate" onItemclick="handleClick">
+
+			<Templates>
+				<ItemTemplate name="stopTemplate">
+					<ImageView bindId="stopImage" id="image" />
+					<Label bindId="stopName" class="lblStopName" />
+				</ItemTemplate>
+			</Templates>
+
+			<ListSection dataCollection="audioStops">
+				<ListItem stopName:text="{stopName}" stopName:model="{alloy_id}" stopImage:image="{stopImage}" stopImage:width="100%"/>
+			</ListSection>
+
+		</ListView>
+
+	</Window>
+
+</Alloy>

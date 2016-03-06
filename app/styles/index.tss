@@ -1,0 +1,17 @@
+".container": {
+	backgroundColor:"#888"
+}
+
+"TableViewRow[platform=android]": { 
+    font: { 
+       fontSize: '24' 
+    }, 
+    height: '40' 
+}
+
+'.lblStopName': {
+	font: {
+		fontSize: '30'
+	},
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+}
