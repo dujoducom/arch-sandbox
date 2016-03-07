@@ -3,9 +3,9 @@
 var stopsCollection = Alloy.Collections.audioStops;
 
 var stopOne = Alloy.createModel('audioStops', {stopName: 'Windhover Hall', stopImage: '/stop1.jpg', stopDescription: 'The beautiful Windhover hall offers striking views of the lake. Be sure to look up for a different perspective of the wings as they open and close!'});
-var stopTwo = Alloy.createModel('audioStops', {stopName: 'Windhover Lake Window', stopImage: '/stop2.jpg', stopDescription: 'The beautiful Windhover hall offers striking views of the lake. Be sure to look up for a different perspective of the wings as they open and close!'});
-var stopThree = Alloy.createModel('audioStops', {stopName: 'West Galleria', stopImage: '/stop3.jpg', stopDescription: 'The beautiful Windhover hall offers striking views of the lake. Be sure to look up for a different perspective of the wings as they open and close!'});
-var stopFour = Alloy.createModel('audioStops', {stopName: 'Galleria Detail #1', stopImage: '/stop4.jpg', stopDescription: 'The beautiful Windhover hall offers striking views of the lake. Be sure to look up for a different perspective of the wings as they open and close!'});
+var stopTwo = Alloy.createModel('audioStops', {stopName: 'Windhover Lake Window', stopImage: '/stop2.jpg', stopDescription: 'The Lake Window. The beautiful Windhover hall offers striking views of the lake. Be sure to look up for a different perspective of the wings as they open and close!'});
+var stopThree = Alloy.createModel('audioStops', {stopName: 'West Galleria', stopImage: '/stop3.jpg', stopDescription: 'Enter the Galleria on the west. The beautiful Windhover hall offers striking views of the lake. Be sure to look up for a different perspective of the wings as they open and close!'});
+var stopFour = Alloy.createModel('audioStops', {stopName: 'Galleria Detail #1', stopImage: '/stop4.jpg', stopDescription: 'East Galleria on the Lake is a great place for something or other. blah blah. The beautiful Windhover hall offers striking views of the lake. Be sure to look up for a different perspective of the wings as they open and close!'});
 
 stopsCollection.add(stopOne);
 stopOne.save();
@@ -18,10 +18,14 @@ stopFour.save();
 
 $.index.open();
 
+Alloy.Globals.parent = $.index;
+
+Alloy.Globals.stopCollection = stopsCollection;
+
 function handleClick(e) {
 	var section = $.audioStopList.sections[e.sectionIndex];
 	var item = section.getItemAt(e.itemIndex);
-	alert(item.stopName.text);
+	//alert(item.stopName.text);
 	
 	//http://stackoverflow.com/questions/26163719/titanium-alloy-data-binding-how-to-get-current-model-from-clicked-view
 	var modelId = item.stopName.model;
@@ -29,5 +33,10 @@ function handleClick(e) {
     var model = stopsCollection.get(modelId);
     var stopDescription = model.get("stopDescription");
         
-    alert(stopDescription);
+    //alert(stopDescription);
+    
+	var viewAudioStop = Alloy.createController('AudioStop', {stopModel:model});
+    
 }
+
+

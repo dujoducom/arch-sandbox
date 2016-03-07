@@ -1,0 +1,11 @@
+<Alloy>
+	<Model src="audioStops" id="stopModel" instance="true" />
+	<Window id="AudioStop">	
+		<View class="container">
+			<ImageView top="0" image="{$.stopModel.stopImage}" id="imgStopCover" />
+			<Label text="{$.stopModel.stopName}" />
+			<Label textAlign="left" text="{$.stopModel.stopDescription}" />
+			<Button title="Do Something" bottom="10" onClick="clickButton" />
+		</View>
+	</Window>
+</Alloy>
