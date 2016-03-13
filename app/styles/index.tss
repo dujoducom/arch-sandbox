@@ -1,5 +1,8 @@
 ".container": {
-	backgroundColor:"#888"
+	barColor:"#0076bc",
+	titleAttributes: {
+		color:'#0076bc'
+	}
 }
 
 "TableViewRow[platform=android]": { 
@@ -10,8 +13,44 @@
 }
 
 '.lblStopName': {
+	color: 'white',
 	font: {
-		fontSize: '30'
+		fontSize: '24'
 	},
-	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	left: '15',
+	right: '15'
 }
+
+
+
+'.viewStopName' : {
+	height: Ti.UI.SIZE,
+	width: Ti.UI.SIZE,
+	//backgroundColor: '#0076bc',
+	backgroundColor: '#1b1b1b',
+	top: '0',
+	bottom: '0',
+	left: '0'
+}
+
+'.viewBorder' : {
+	height: Ti.UI.SIZE,
+	width: Ti.UI.SIZE,
+	backgroundColor: 'white',
+	top: '18',
+	left: '0'
+}
+
+
+'#audioStopList': {
+	separatorHeight: '2',
+	separatorColor: 'white'
+}
+
+'.playButton': {
+	right:'10',
+	bottom:'10'
+}
+
+

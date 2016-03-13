@@ -25,6 +25,20 @@ overrode the settings with other TSS, XML, or JS settings:
 
 */
 'Window': {
-	backgroundColor: '#888' // white background instead of default transparent or black
+	color:'black',
+	backgroundColor: '#FFFFFF' // white background instead of default transparent or black
 }
 
+'.container' : {
+	color: '#000'
+}
+
+'.defaultButton' : {
+	backgroundColor:'#0076bc',
+	color: 'white',
+	right: '10'
+}
+
+'Label': {
+	color:'#666'
+}

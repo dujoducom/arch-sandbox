@@ -1,24 +1,40 @@
 <Alloy>
 
 	<Collection src="audioStops"/>
-
-	<Window id="index" class="container" title="Architectural Guide">
+	<!--
+  <TabGroup backgroundColor="white" title="Architectural Guide" >
+            <Tab id="tab1" title="Tab 1">
+        -->        
+	<Window id="index" class="container" barColor="#0076bc" title="Architectural Guide">
 
 		<ListView id="audioStopList" defaultItemTemplate="stopTemplate" onItemclick="handleClick">
 
 			<Templates>
 				<ItemTemplate name="stopTemplate">
 					<ImageView bindId="stopImage" id="image" />
-					<Label bindId="stopName" class="lblStopName" />
+					<View class="viewBorder">
+						<View class="viewStopName">
+							<Label bindId="stopName" class="lblStopName" />
+						</View>
+					</View>
+					<ImageView class="playButton" image="/play.png" />
 				</ItemTemplate>
 			</Templates>
 
 			<ListSection dataCollection="audioStops">
-				<ListItem stopName:text="{stopName}" stopName:model="{alloy_id}" stopImage:image="{stopImage}" stopImage:width="100%"/>
+				<ListItem class="audioStopSelection" opacity="1" stopName:text="{stopName}" stopName:model="{alloy_id}" stopImage:image="{stopImage}" stopImage:width="100%"/>
 			</ListSection>
 
 		</ListView>
 
 	</Window>
-
+			<!--	
+            </Tab>
+            <Tab id="tab2" title="Tab 2">
+                <Window id="win2" title="Tab 2">
+                    <Label id="label2" color="#999">I am Window 2</Label>
+                </Window>
+            </Tab>
+     </TabGroup>-->
+       
 </Alloy>

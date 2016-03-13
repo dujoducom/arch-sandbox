@@ -1,0 +1,7 @@
+<Alloy>
+	<Window id="AssetText" title="{$.assetModel.assetTitle}" class="container">
+	<View class="container">
+		<Label text="{$.assetModel.assetText}" />
+	</View>
+	</Window>
+</Alloy>

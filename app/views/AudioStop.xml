@@ -1,11 +1,28 @@
 <Alloy>
 	<Model src="audioStops" id="stopModel" instance="true" />
-	<Window id="AudioStop">	
-		<View class="container">
-			<ImageView top="0" image="{$.stopModel.stopImage}" id="imgStopCover" />
-			<Label text="{$.stopModel.stopName}" />
-			<Label textAlign="left" text="{$.stopModel.stopDescription}" />
-			<Button title="Do Something" bottom="10" onClick="clickButton" />
+	<Window id="AudioStop" title="{$.stopModel.stopName}" class="container">	
+		<View class="container" layout="vertical">
+			<ScrollableView id="stopImagesScroll" showPagingControl="true" height="35%" width="100%">
+				<ImageView width="100%" height="80%" top="0" image="{$.stopModel.stopImage}" id="imgStopCover" />
+				<!--<Label text="{$.stopModel.stopName}" />-->
+			</ScrollableView>
+			<ScrollView id="stopDescriptionScroll" height="45%" width="100%" showHorizontalScrollIndicator="true">
+			
+				<Label textAlign="left" height="Titanium.UI.SIZE" width="90%" top='15' bottom='15' text="{$.stopModel.stopDescription}" />
+				
+			</ScrollView>
+			<View id="stopPlayerView" layout="vertical" height="20%" width="100%" bottom="0">
+				<View width="Titanium.UI.FILL" height="Titanium.UI.SIZE">
+					<Label id="sliderAudioPosition" text="0:00"  />
+					<Slider id="audioSlider" top="10" min="0" max="100" value="50" onChange="updateLabel"/>
+					<Label id="sliderAudioDuration" text="3:24" />
+				</View>
+				<View layout="horizontal" width="Titanium.UI.FILL" height="Titanium.UI.SIZE">
+					<ImageView id="btnPlayPause" image="/playButton.png" onClick="playButton" />
+					<Button title="BACK" class="defaultButton" onClick="backButton" />
+				</View>
+			</View>
+			
 		</View>
 	</Window>
 </Alloy>

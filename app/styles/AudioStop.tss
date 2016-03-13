@@ -2,3 +2,30 @@
 ".container" : {
   
 }
+
+'#stopPlayerView' : {
+	backgroundColor: '#0076bc'
+}
+
+'#stopImagesScroll': {
+	backgroundColor: '#1b1b1b'
+}
+
+'#sliderAudioPosition' : {
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.SIZE,
+	color: 'white',
+	left: '10'
+}
+
+'#sliderAudioDuration' : {
+	height: Titanium.UI.SIZE,
+	width: Titanium.UI.SIZE,
+	color: 'white',
+	right: '10'
+}
+
+'#audioSlider' : {
+	right: '50',
+	left: '50'
+}
