@@ -15,7 +15,8 @@
 '.lblStopName': {
 	color: 'white',
 	font: {
-		fontSize: '24'
+		fontSize: '20',
+		fontWeight: 'bold'
 	},
 	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
 	left: '15',
@@ -27,24 +28,25 @@
 '.viewStopName' : {
 	height: Ti.UI.SIZE,
 	width: Ti.UI.SIZE,
-	//backgroundColor: '#0076bc',
+	backgroundColor: '#0076bc',
 	backgroundColor: '#1b1b1b',
-	top: '0',
-	bottom: '0',
+	top: '4',
+	bottom: '4',
 	left: '0'
 }
 
 '.viewBorder' : {
 	height: Ti.UI.SIZE,
 	width: Ti.UI.SIZE,
-	backgroundColor: 'white',
+	backgroundColor: '#0076bc',
+	backgroundColor: '#1b1b1b',
 	top: '18',
 	left: '0'
 }
 
 
 '#audioStopList': {
-	separatorHeight: '2',
+	separatorHeight: '0',
 	separatorColor: 'white'
 }
 

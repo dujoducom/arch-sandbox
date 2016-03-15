@@ -3,7 +3,8 @@ exports.definition = {
 		columns: {
 			"stopName": "TEXT",
 			"stopDescription": "TEXT",
-			"stopImage": "TEXT"
+			"stopImage": "TEXT",
+			"additionalImages": "TEXT"
 		},
 		adapter: {
 			type: "sql",

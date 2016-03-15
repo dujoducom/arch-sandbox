@@ -1,26 +1,48 @@
 <Alloy>
 	<Model src="audioStops" id="stopModel" instance="true" />
+	
 	<Window id="AudioStop" title="{$.stopModel.stopName}" class="container">	
+		
 		<View class="container" layout="vertical">
-			<ScrollableView id="stopImagesScroll" showPagingControl="true" height="35%" width="100%">
-				<ImageView width="100%" height="80%" top="0" image="{$.stopModel.stopImage}" id="imgStopCover" />
-				<!--<Label text="{$.stopModel.stopName}" />-->
-			</ScrollableView>
-			<ScrollView id="stopDescriptionScroll" height="45%" width="100%" showHorizontalScrollIndicator="true">
 			
-				<Label textAlign="left" height="Titanium.UI.SIZE" width="90%" top='15' bottom='15' text="{$.stopModel.stopDescription}" />
+			<ScrollView id="stopDescriptionScroll" height="75%" width="100%" showVerticalScrollIndicator="true" layout="vertical">
+				
+				
+				<ScrollableView id="stopImagesScroll" showPagingControl="false" height="205" width="100%">
+					<ImageView image="{$.stopModel.stopImage}" id="imgStopCover" width="Titanium.UI.SIZE" top="10" bottom="10" left="10" right="10" />
+				</ScrollableView>
+				
+				<!--
+				<ScrollView id="stopImagesScrollView" layout="horizontal" showHorizontalScrollIndicator="true" height="200" width="100%">
+					<ImageView image="{$.stopModel.stopImage}" id="imgStopCover" />
+				</ScrollView>
+				-->
+				<Label id="audioStopLabel" textAlign="left" height="Titanium.UI.SIZE" width="80%" top='25' bottom='15' text="{$.stopModel.stopDescription}" />
 				
 			</ScrollView>
-			<View id="stopPlayerView" layout="vertical" height="20%" width="100%" bottom="0">
+			
+			<View id="stopPlayerView" layout="vertical" height="25%" width="100%" bottom="0">
+				
 				<View width="Titanium.UI.FILL" height="Titanium.UI.SIZE">
-					<Label id="sliderAudioPosition" text="0:00"  />
-					<Slider id="audioSlider" top="10" min="0" max="100" value="50" onChange="updateLabel"/>
-					<Label id="sliderAudioDuration" text="3:24" />
+					<Label id="sliderAudioPosition" top="10" text=""  />
+					<Slider id="audioSlider" top="10" min="0" max="100" value="0" onChange="updateLabel"/>
+					<Label id="sliderAudioDuration" top="10" text="" />
 				</View>
-				<View layout="horizontal" width="Titanium.UI.FILL" height="Titanium.UI.SIZE">
-					<ImageView id="btnPlayPause" image="/playButton.png" onClick="playButton" />
-					<Button title="BACK" class="defaultButton" onClick="backButton" />
+				
+				<View width="Titanium.UI.FILL" height="Titanium.UI.SIZE" top="10">
+					<View layout="horizontal" width="Titanium.UI.SIZE">
+						
+						<ImageView id="btnVolume" image="/btnVolume.png" onClick="volumeButton"  />
+						<ImageView id="btnBack" image="/btnStart.png" left="15" onClick="startButton"  />
+						<View left="15" width="Titanium.UI.SIZE" height="Titanium.UI.SIZE">
+							<ImageView id="btnPause" image="/pauseButton.png" onClick="playButton" />
+							<ImageView id="btnPlayPause" image="/playButton.png" onClick="playButton" />
+						</View>
+						<ImageView id="btnHome" image="/btnHome.png" left="15" onClick="backButton" />
+						<!--<Button title="BACK" class="defaultButton" onClick="backButton" />-->
+					</View>
 				</View>
+				
 			</View>
 			
 		</View>
