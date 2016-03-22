@@ -1,7 +1,7 @@
 <Alloy>
 	<Model src="audioStops" id="stopModel" instance="true" />
 	
-	<Window id="AudioStop" title="{$.stopModel.stopName}" class="container">	
+	<Window id="AudioStop" title="{$.stopModel.stopName}" class="container" backButtonTitle="Back">	
 		
 		<View class="container" layout="vertical">
 			
@@ -17,7 +17,7 @@
 					<ImageView image="{$.stopModel.stopImage}" id="imgStopCover" />
 				</ScrollView>
 				-->
-				<Label id="audioStopLabel" textAlign="left" height="Titanium.UI.SIZE" width="80%" top='25' bottom='15' text="{$.stopModel.stopDescription}" />
+				<Label id="audioStopLabel" textAlign="left" height="Titanium.UI.SIZE" width="80%" top='25' bottom='15' html="{$.stopModel.stopDescription}" />
 				
 			</ScrollView>
 			
@@ -29,16 +29,16 @@
 					<Label id="sliderAudioDuration" top="10" text="" />
 				</View>
 				
-				<View width="Titanium.UI.FILL" height="Titanium.UI.SIZE" top="10">
-					<View layout="horizontal" width="Titanium.UI.SIZE">
+				<View width="Titanium.UI.FILL" height="Titanium.UI.FILL" top="10">
+					<View layout="horizontal" width="Titanium.UI.SIZE" height="Titanium.UI.FILL">
 						
-						<ImageView id="btnVolume" image="/btnVolume.png" onClick="volumeButton"  />
-						<ImageView id="btnBack" image="/btnStart.png" left="15" onClick="startButton"  />
+						<ImageView id="btnVolume" image="/btnVolume.png" onClick="volumeButton" height="60%" />
+						<ImageView id="btnBack" image="/btnStart.png" left="15" onClick="startButton" height="60%" />
 						<View left="15" width="Titanium.UI.SIZE" height="Titanium.UI.SIZE">
-							<ImageView id="btnPause" image="/pauseButton.png" onClick="playButton" />
-							<ImageView id="btnPlayPause" image="/playButton.png" onClick="playButton" />
+							<ImageView id="btnPause" image="/pauseButton.png" onClick="playButton" height="75%" />
+							<ImageView id="btnPlayPause" image="/playButton.png" onClick="playButton" height="75%" />
 						</View>
-						<ImageView id="btnHome" image="/btnHome.png" left="15" onClick="backButton" />
+						<ImageView id="btnHome" image="/btnHome.png" left="15" onClick="backButton" height="60%" />
 						<!--<Button title="BACK" class="defaultButton" onClick="backButton" />-->
 					</View>
 				</View>

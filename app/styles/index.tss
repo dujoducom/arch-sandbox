@@ -28,8 +28,8 @@
 '.viewStopName' : {
 	height: Ti.UI.SIZE,
 	width: Ti.UI.SIZE,
-	backgroundColor: '#0076bc',
-	backgroundColor: '#1b1b1b',
+	//backgroundColor: '#0076bc',
+	//backgroundColor: '#1b1b1b',
 	top: '4',
 	bottom: '4',
 	left: '0'
@@ -40,6 +40,7 @@
 	width: Ti.UI.SIZE,
 	backgroundColor: '#0076bc',
 	backgroundColor: '#1b1b1b',
+	opacity: 0.9,
 	top: '18',
 	left: '0'
 }

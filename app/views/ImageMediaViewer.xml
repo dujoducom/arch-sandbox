@@ -1,0 +1,7 @@
+<Alloy>
+	<Window id="ImageMediaViewer" title="Media Viewer" class="container">
+		<ScrollView id="scroller" width="Titanium.UI.FILL" height="Titanium.UI.FILL">
+			
+		</ScrollView>
+	</Window>
+</Alloy>
