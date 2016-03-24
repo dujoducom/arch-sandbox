@@ -102,7 +102,7 @@ var transparentBg = Ti.UI.createView({
 	height: Titanium.UI.FILL,
 	width: Titanium.UI.FILL,
 	backgroundColor: 'black',
-	opacity: 0.7
+	opacity: 0
 });
 
 var volContainer = Ti.UI.createView({
@@ -121,21 +121,21 @@ var volSlider = Ti.UI.createSlider({
 volSlider.addEventListener('change', function(e) {
 	Alloy.Globals.soundVolume = e.value / 10;
 	player.volume = Alloy.Globals.soundVolume;
+	resetVolumeInterval();
 });
 
 var sliderContainer = Ti.UI.createView({
 	width: Ti.UI.FILL,
-	left: 10,
-	right: 10,
-	height: 100,
-	backgroundColor: '#0076db',
+	height: 200,
+	backgroundColor: '#0076bd',
 	layout: 'vertical',
 	bubbleParent: false,
-	bottom: 0
+	bottom: -200,
+	opacity: 0
 });
 
 sliderContainer.add(Ti.UI.createLabel({
-	text:'Volume:',
+	text:'VOLUME',
 	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
 	left: 18,
 	top: 12,
@@ -143,19 +143,131 @@ sliderContainer.add(Ti.UI.createLabel({
 	color: 'white'
 }));
 
-sliderContainer.add(volSlider);
+var centerButton = Ti.UI.createView({
+	width: Ti.UI.FILL
+});
 
+var buttonContainer = Ti.UI.createView({
+	layout: 'horizontal',
+	width: Ti.UI.SIZE,
+	top: 25
+});
+
+var btnVolUp = Ti.UI.createImageView({
+	image:'/volUp.png', 
+	height: '60%',
+	right: 10
+});
+btnVolUp.addEventListener('click', function() {adjustVolume(0.1);});
+
+var btnVolDown = Ti.UI.createImageView({
+	image:'/volDown.png', 
+	height: '60%',
+	left: 10,
+});
+btnVolDown.addEventListener('click', function() {adjustVolume(-0.1);});
+
+var btnExit = Ti.UI.createImageView({
+	image:'/btnClose.png', 
+	height: '60%',
+	left: 20
+});
+btnExit.addEventListener('click', closeVolumePanel);
+
+
+buttonContainer.add(btnVolUp);
+buttonContainer.add(btnVolDown);
+buttonContainer.add(btnExit);
+centerButton.add(buttonContainer);
+
+sliderContainer.add(volSlider);
+sliderContainer.add(centerButton);
 volContainer.add(transparentBg);
 volContainer.add(sliderContainer);
 
+
 volContainer.addEventListener('click', function() {
-		$.AudioStop.remove(volContainer);
+	closeVolumePanel();
 });
+
+
+function closeVolumePanel() {
+	
+	clearInterval(volumeHideInterval);
+	
+	transparentBg.animate({
+		opacity: 0,
+		duration: 200
+	});
+	sliderContainer.animate({
+		bottom: -200,
+		duration: 200,
+		opacity: 0,
+		curve: Ti.UI.ANIMATION_CURVE_EASE_IN
+	}, function() {
+		$.AudioStop.remove(volContainer);
+	});
+	
+}
+
+
+var volumeHideInterval;
+
+
+function resetVolumeInterval() {
+	clearInterval(volumeHideInterval);
+	volumeHideInterval = setInterval(closeVolumePanel, 5000);
+}
+
+function openVolumePanel() {
+	volumeHideInterval = setInterval(closeVolumePanel, 5000);
+	$.AudioStop.add(volContainer);
+	sliderContainer.animate({
+		bottom: 0,
+		duration: 200,
+		opacity: 1.0,
+		curve: Ti.UI.ANIMATION_CURVE_EASE_OUT
+	});
+	transparentBg.animate({
+		opacity: 0.7,
+		duration: 200
+	});
+}
+
+function adjustVolume(amt) {
+	// maybe pass soundPlayer for more flexability here...
+	
+	if(amt > 0) {
+		// if amt is positive, vol is increasing...
+		if(Alloy.Globals.soundVolume + amt <= 1) {
+			// if volume increases to something less than maximum
+			Alloy.Globals.soundVolume += amt;
+		} else {
+			// if vol increases to full
+			Alloy.Globals.soundVolume = 1;
+		}
+	} else {
+		// if amt is negative, vol is decreasing...
+		if(Alloy.Globals.soundVolume + amt >= 0) {
+			// if volume decreases to something greater than minimum
+			Alloy.Globals.soundVolume += amt;
+		} else {
+			// if vol decreases to minimum
+			Alloy.Globals.soundVolume = 0;
+		}
+	}
+	
+	player.volume = Alloy.Globals.soundVolume;
+	volSlider.setValue(Alloy.Globals.soundVolume * 10);
+	//Alloy.Globals.soundVolume = e.value / 10;
+	//player.volume = Alloy.Globals.soundVolume;
+}
+
+
 
 function volumeButton(e) {
 
-
-	$.AudioStop.add(volContainer);
+	openVolumePanel();
 	
 }
 

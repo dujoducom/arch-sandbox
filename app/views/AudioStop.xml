@@ -38,7 +38,7 @@
 							<ImageView id="btnPause" image="/pauseButton.png" onClick="playButton" height="75%" />
 							<ImageView id="btnPlayPause" image="/playButton.png" onClick="playButton" height="75%" />
 						</View>
-						<ImageView id="btnHome" image="/btnHome.png" left="15" onClick="backButton" height="60%" />
+						<ImageView id="btnHome" image="/btnClose.png" left="15" onClick="backButton" height="60%" />
 						<!--<Button title="BACK" class="defaultButton" onClick="backButton" />-->
 					</View>
 				</View>
