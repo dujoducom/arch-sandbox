@@ -1,7 +1,8 @@
 <Alloy>
-	<Window id="ImageMediaViewer" title="Media Viewer" class="container">
+	<Window id="ImageMediaViewer" title="Media Viewer" class="container" fullscreen="true">
+		
 		<ScrollView id="scroller" width="Titanium.UI.FILL" height="Titanium.UI.FILL">
-			
+			<ImageView image="transparentClose.png" onClick="handleClose" zIndex="5" />
 		</ScrollView>
 	</Window>
 </Alloy>

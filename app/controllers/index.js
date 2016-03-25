@@ -26,16 +26,6 @@ stops.push(
 						additionalData: {
 							something: "Something"
 						}
-					},
-					{
-						mediaType: "video",
-						mediaTitle: "Wings",
-						mediaDescription: "See the wings open from this vantage point",
-						mediaThumbnail: "/stop1/2.jpg",
-						mediaSource: "/stop1/2.jpg",
-						additionalData: {
-							something: "Something"
-						}
 					}
 				]
 			),   
@@ -64,16 +54,6 @@ stops.push(
 						mediaType: "image",
 						mediaTitle: "Calatrava Drawing #1",
 						mediaDescription: "This is an example of one of Santiago Calatravas concept sketches for the Quadracchi Pavillion.",
-						mediaThumbnail: "/stop1/2.jpg",
-						mediaSource: "/stop1/2.jpg",
-						additionalData: {
-							something: "Something"
-						}
-					},
-					{
-						mediaType: "video",
-						mediaTitle: "Wings",
-						mediaDescription: "See the wings open from this vantage point",
 						mediaThumbnail: "/stop1/2.jpg",
 						mediaSource: "/stop1/2.jpg",
 						additionalData: {
@@ -113,16 +93,6 @@ stops.push(
 						additionalData: {
 							something: "Something"
 						}
-					},
-					{
-						mediaType: "video",
-						mediaTitle: "Wings",
-						mediaDescription: "See the wings open from this vantage point",
-						mediaThumbnail: "/stop1/2.jpg",
-						mediaSource: "/stop1/2.jpg",
-						additionalData: {
-							something: "Something"
-						}
 					}
 				]
 			),   
@@ -152,16 +122,6 @@ stops.push(
 						mediaType: "image",
 						mediaTitle: "Calatrava Drawing #1",
 						mediaDescription: "This is an example of one of Santiago Calatravas concept sketches for the Quadracchi Pavillion.",
-						mediaThumbnail: "/stop1/2.jpg",
-						mediaSource: "/stop1/2.jpg",
-						additionalData: {
-							something: "Something"
-						}
-					},
-					{
-						mediaType: "video",
-						mediaTitle: "Wings",
-						mediaDescription: "See the wings open from this vantage point",
 						mediaThumbnail: "/stop1/2.jpg",
 						mediaSource: "/stop1/2.jpg",
 						additionalData: {
@@ -207,7 +167,7 @@ stops.push(
 						mediaTitle: "Wings",
 						mediaDescription: "See the wings open from this vantage point",
 						mediaThumbnail: "/stop1/2.jpg",
-						mediaSource: "/stop1/2.jpg",
+						mediaSource: "/video/wings_small.mp4",
 						additionalData: {
 							something: "Something"
 						}
@@ -240,16 +200,6 @@ stops.push(
 						mediaType: "image",
 						mediaTitle: "Calatrava Drawing #1",
 						mediaDescription: "This is an example of one of Santiago Calatravas concept sketches for the Quadracchi Pavillion.",
-						mediaThumbnail: "/stop1/2.jpg",
-						mediaSource: "/stop1/2.jpg",
-						additionalData: {
-							something: "Something"
-						}
-					},
-					{
-						mediaType: "video",
-						mediaTitle: "Wings",
-						mediaDescription: "See the wings open from this vantage point",
 						mediaThumbnail: "/stop1/2.jpg",
 						mediaSource: "/stop1/2.jpg",
 						additionalData: {
@@ -289,16 +239,6 @@ stops.push(
 						additionalData: {
 							something: "Something"
 						}
-					},
-					{
-						mediaType: "video",
-						mediaTitle: "Wings",
-						mediaDescription: "See the wings open from this vantage point",
-						mediaThumbnail: "/stop1/2.jpg",
-						mediaSource: "/stop1/2.jpg",
-						additionalData: {
-							something: "Something"
-						}
 					}
 				]
 			),   
@@ -327,16 +267,6 @@ stops.push(
 						mediaType: "image",
 						mediaTitle: "Calatrava Drawing #1",
 						mediaDescription: "This is an example of one of Santiago Calatravas concept sketches for the Quadracchi Pavillion.",
-						mediaThumbnail: "/stop1/2.jpg",
-						mediaSource: "/stop1/2.jpg",
-						additionalData: {
-							something: "Something"
-						}
-					},
-					{
-						mediaType: "video",
-						mediaTitle: "Wings",
-						mediaDescription: "See the wings open from this vantage point",
 						mediaThumbnail: "/stop1/2.jpg",
 						mediaSource: "/stop1/2.jpg",
 						additionalData: {
@@ -374,16 +304,6 @@ stops.push(
 						additionalData: {
 							something: "Something"
 						}
-					},
-					{
-						mediaType: "video",
-						mediaTitle: "Wings",
-						mediaDescription: "See the wings open from this vantage point",
-						mediaThumbnail: "/stop1/2.jpg",
-						mediaSource: "/stop1/2.jpg",
-						additionalData: {
-							something: "Something"
-						}
 					}
 				]
 			),   
@@ -412,16 +332,6 @@ stops.push(
 						mediaType: "image",
 						mediaTitle: "Calatrava Drawing #1",
 						mediaDescription: "This is an example of one of Santiago Calatravas concept sketches for the Quadracchi Pavillion.",
-						mediaThumbnail: "/stop1/2.jpg",
-						mediaSource: "/stop1/2.jpg",
-						additionalData: {
-							something: "Something"
-						}
-					},
-					{
-						mediaType: "video",
-						mediaTitle: "Wings",
-						mediaDescription: "See the wings open from this vantage point",
 						mediaThumbnail: "/stop1/2.jpg",
 						mediaSource: "/stop1/2.jpg",
 						additionalData: {

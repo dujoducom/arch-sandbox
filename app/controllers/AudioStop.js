@@ -27,11 +27,23 @@ if(media.length > 0) {
 		
 		//i.addEventListener('click', mediaClick);
 		
-		i.addEventListener('click', function(e) {
-			//img = e.source.getImage();
-			var viewAudioStop = Alloy.createController('ImageMediaViewer', {mediaData:mediaData});
-    
-		});
+		switch(mediaData.mediaType) {
+			case "image":
+				i.addEventListener('click', function(e) {
+					//img = e.source.getImage();
+					var viewAudioStop = Alloy.createController('ImageMediaViewer', {mediaData:mediaData});
+		    
+				});
+			break;
+			case "video":
+				i.addEventListener('click', function(e) {
+					// if video, launch it.
+		    		playVideo(mediaData.mediaSource);
+				});
+			break;
+		}
+		
+		
 		
 		$.stopImagesScroll.addView(i);
 		
@@ -283,4 +295,34 @@ function mediaClick(e) {
 	img = e.source.getImage();
 	var viewAudioStop = Alloy.createController('ImageMediaViewer', {img:img});
     
+}
+
+
+function playVideo(mediaSource) {
+	
+    var activeMovie = Titanium.Media.createVideoPlayer({
+        url : mediaSource,
+        backgroundColor : '#1d1d1d',
+        movieControlMode : Titanium.Media.VIDEO_CONTROL_DEFAULT,
+        scalingMode : Titanium.Media.VIDEO_SCALING_ASPECT_FIT,
+        fullscreen : true,
+        autoplay : true
+    });
+
+    var closeButton = Ti.UI.createButton({
+        title : "Exit Video",
+        top : "0dp",
+        height : "40dp",
+        left : "10dp",
+        right : "10dp"
+    });
+
+    closeButton.addEventListener('click', function() {
+        activeMovie.hide();
+        activeMovie.release();
+        activeMovie = null;
+    });
+
+    activeMovie.add(closeButton);
+	
 }

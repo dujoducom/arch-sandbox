@@ -11,3 +11,7 @@ img.addEventListener('click', function(e) {
 });
 
 $.scroller.add(img);
+
+function handleClose(e) {
+	$.ImageMediaViewer.close();
+}
