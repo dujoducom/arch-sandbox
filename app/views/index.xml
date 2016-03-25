@@ -6,7 +6,7 @@
             <Tab id="tab1" title="Tab 1">
         -->        
 	<Window id="index" class="container" barColor="#0076bc" title="Architectural Guide">
-
+		<!--<Button id="playVideo" onClick="playVideo" title="something" />-->
 		<ListView id="audioStopList" defaultItemTemplate="stopTemplate" onItemclick="handleClick">
 
 			<Templates>

@@ -6,7 +6,6 @@ stops.push(
 	Alloy.createModel(
 		'audioStops', 
 			{
-			
 			additionalImages:JSON.stringify(['/stop1/1.jpg', '/stop1/2.jpg']), 
 			audioPath: '/audio/01_intro.mp3', 
 			stopName: 'INTRODUCTION', 
@@ -140,3 +139,34 @@ function handleClick(e) {
 	var viewAudioStop = Alloy.createController('AudioStop', {stopModel:model});
     
 }
+
+/*
+function playVideo(e) {
+	
+    var activeMovie = Titanium.Media.createVideoPlayer({
+        url : '/video/wings_small.mp4',
+        backgroundColor : 'blue',
+        movieControlMode : Titanium.Media.VIDEO_CONTROL_DEFAULT,
+        scalingMode : Titanium.Media.VIDEO_SCALING_ASPECT_FILL,
+        fullscreen : true,
+        autoplay : true
+    });
+
+    var closeButton = Ti.UI.createButton({
+        title : "Exit Video",
+        top : "0dp",
+        height : "40dp",
+        left : "10dp",
+        right : "10dp"
+    });
+
+    closeButton.addEventListener('click', function() {
+        activeMovie.hide();
+        activeMovie.release();
+        activeMovie = null;
+    });
+
+    activeMovie.add(closeButton);
+	
+}
+*/
