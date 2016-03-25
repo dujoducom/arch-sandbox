@@ -5,8 +5,40 @@ var stops = [];
 stops.push(
 	Alloy.createModel(
 		'audioStops', 
-			{
-			additionalImages:JSON.stringify(['/stop1/1.jpg', '/stop1/2.jpg']), 
+			{additionalImages:JSON.stringify(
+				[
+					{
+						mediaType: "image",
+						mediaTitle: "Calatrava Drawing #1",
+						mediaDescription: "This is an example of one of Santiago Calatravas concept sketches for the Quadracchi Pavillion.",
+						mediaThumbnail: "/stop1/1.jpg",
+						mediaSource: "/stop1/1.jpg",
+						additionalData: {
+							something: "Something"
+						}
+					},
+					{
+						mediaType: "image",
+						mediaTitle: "Calatrava Drawing #1",
+						mediaDescription: "This is an example of one of Santiago Calatravas concept sketches for the Quadracchi Pavillion.",
+						mediaThumbnail: "/stop1/2.jpg",
+						mediaSource: "/stop1/2.jpg",
+						additionalData: {
+							something: "Something"
+						}
+					},
+					{
+						mediaType: "video",
+						mediaTitle: "Wings",
+						mediaDescription: "See the wings open from this vantage point",
+						mediaThumbnail: "/stop1/2.jpg",
+						mediaSource: "/stop1/2.jpg",
+						additionalData: {
+							something: "Something"
+						}
+					}
+				]
+			),   
 			audioPath: '/audio/01_intro.mp3', 
 			stopName: 'INTRODUCTION', 
 			stopImage: '/stops/stop01.jpg', 
@@ -16,7 +48,40 @@ stops.push(
 stops.push(
 	Alloy.createModel(
 		'audioStops', 
-			{additionalImages:JSON.stringify(['/stop1/1.jpg', '/stop1/2.jpg']), 
+			{additionalImages:JSON.stringify(
+				[
+					{
+						mediaType: "image",
+						mediaTitle: "Calatrava Drawing #1",
+						mediaDescription: "This is an example of one of Santiago Calatravas concept sketches for the Quadracchi Pavillion.",
+						mediaThumbnail: "/stop1/1.jpg",
+						mediaSource: "/stop1/1.jpg",
+						additionalData: {
+							something: "Something"
+						}
+					},
+					{
+						mediaType: "image",
+						mediaTitle: "Calatrava Drawing #1",
+						mediaDescription: "This is an example of one of Santiago Calatravas concept sketches for the Quadracchi Pavillion.",
+						mediaThumbnail: "/stop1/2.jpg",
+						mediaSource: "/stop1/2.jpg",
+						additionalData: {
+							something: "Something"
+						}
+					},
+					{
+						mediaType: "video",
+						mediaTitle: "Wings",
+						mediaDescription: "See the wings open from this vantage point",
+						mediaThumbnail: "/stop1/2.jpg",
+						mediaSource: "/stop1/2.jpg",
+						additionalData: {
+							something: "Something"
+						}
+					}
+				]
+			),   
 			audioPath: '/audio/02_windhover.mp3', 
 			stopName: 'WINDHOVER HALL', 
 			stopImage: '/stops/stop02.jpg', 
@@ -27,7 +92,40 @@ stops.push(
 stops.push(
 	Alloy.createModel(
 		'audioStops', 
-			{additionalImages:JSON.stringify(['/stop1/1.jpg', '/stop1/2.jpg']), 
+			{additionalImages:JSON.stringify(
+				[
+					{
+						mediaType: "image",
+						mediaTitle: "Calatrava Drawing #1",
+						mediaDescription: "This is an example of one of Santiago Calatravas concept sketches for the Quadracchi Pavillion.",
+						mediaThumbnail: "/stop1/1.jpg",
+						mediaSource: "/stop1/1.jpg",
+						additionalData: {
+							something: "Something"
+						}
+					},
+					{
+						mediaType: "image",
+						mediaTitle: "Calatrava Drawing #1",
+						mediaDescription: "This is an example of one of Santiago Calatravas concept sketches for the Quadracchi Pavillion.",
+						mediaThumbnail: "/stop1/2.jpg",
+						mediaSource: "/stop1/2.jpg",
+						additionalData: {
+							something: "Something"
+						}
+					},
+					{
+						mediaType: "video",
+						mediaTitle: "Wings",
+						mediaDescription: "See the wings open from this vantage point",
+						mediaThumbnail: "/stop1/2.jpg",
+						mediaSource: "/stop1/2.jpg",
+						additionalData: {
+							something: "Something"
+						}
+					}
+				]
+			),   
 			audioPath: '/audio/03_lake.mp3', 
 			stopName: 'THE LAKE', 
 			stopImage: '/stop1.jpg', 
@@ -38,7 +136,40 @@ stops.push(
 stops.push(
 	Alloy.createModel(
 		'audioStops',
-		{additionalImages:JSON.stringify(['/stop1/1.jpg', '/stop1/2.jpg']), 
+		{additionalImages:JSON.stringify(
+				[
+					{
+						mediaType: "image",
+						mediaTitle: "Calatrava Drawing #1",
+						mediaDescription: "This is an example of one of Santiago Calatravas concept sketches for the Quadracchi Pavillion.",
+						mediaThumbnail: "/stop1/1.jpg",
+						mediaSource: "/stop1/1.jpg",
+						additionalData: {
+							something: "Something"
+						}
+					},
+					{
+						mediaType: "image",
+						mediaTitle: "Calatrava Drawing #1",
+						mediaDescription: "This is an example of one of Santiago Calatravas concept sketches for the Quadracchi Pavillion.",
+						mediaThumbnail: "/stop1/2.jpg",
+						mediaSource: "/stop1/2.jpg",
+						additionalData: {
+							something: "Something"
+						}
+					},
+					{
+						mediaType: "video",
+						mediaTitle: "Wings",
+						mediaDescription: "See the wings open from this vantage point",
+						mediaThumbnail: "/stop1/2.jpg",
+						mediaSource: "/stop1/2.jpg",
+						additionalData: {
+							something: "Something"
+						}
+					}
+				]
+			),   
 		audioPath:'/audio/04_windows.mp3', 
 		stopName: 'THE WINDOWS', 
 		stopImage: '/stops/stop04.jpg', 
@@ -49,7 +180,40 @@ stops.push(
 stops.push(
 	Alloy.createModel(
 		'audioStops',
-		{additionalImages:JSON.stringify(['/stop1/1.jpg', '/stop1/2.jpg']), 
+		{additionalImages:JSON.stringify(
+				[
+					{
+						mediaType: "image",
+						mediaTitle: "Calatrava Drawing #1",
+						mediaDescription: "This is an example of one of Santiago Calatravas concept sketches for the Quadracchi Pavillion.",
+						mediaThumbnail: "/stop1/1.jpg",
+						mediaSource: "/stop1/1.jpg",
+						additionalData: {
+							something: "Something"
+						}
+					},
+					{
+						mediaType: "image",
+						mediaTitle: "Calatrava Drawing #1",
+						mediaDescription: "This is an example of one of Santiago Calatravas concept sketches for the Quadracchi Pavillion.",
+						mediaThumbnail: "/stop1/2.jpg",
+						mediaSource: "/stop1/2.jpg",
+						additionalData: {
+							something: "Something"
+						}
+					},
+					{
+						mediaType: "video",
+						mediaTitle: "Wings",
+						mediaDescription: "See the wings open from this vantage point",
+						mediaThumbnail: "/stop1/2.jpg",
+						mediaSource: "/stop1/2.jpg",
+						additionalData: {
+							something: "Something"
+						}
+					}
+				]
+			),   
 		audioPath: '/audio/05_wings.mp3', 
 		stopName: 'BURKE BRISE SOLEIL', 
 		stopImage: '/stop2.jpg', 
@@ -60,7 +224,40 @@ stops.push(
 stops.push(
 	Alloy.createModel(
 		'audioStops', 
-		{additionalImages:JSON.stringify(['/stop1/1.jpg', '/stop1/2.jpg']), 
+		{additionalImages:JSON.stringify(
+				[
+					{
+						mediaType: "image",
+						mediaTitle: "Calatrava Drawing #1",
+						mediaDescription: "This is an example of one of Santiago Calatravas concept sketches for the Quadracchi Pavillion.",
+						mediaThumbnail: "/stop1/1.jpg",
+						mediaSource: "/stop1/1.jpg",
+						additionalData: {
+							something: "Something"
+						}
+					},
+					{
+						mediaType: "image",
+						mediaTitle: "Calatrava Drawing #1",
+						mediaDescription: "This is an example of one of Santiago Calatravas concept sketches for the Quadracchi Pavillion.",
+						mediaThumbnail: "/stop1/2.jpg",
+						mediaSource: "/stop1/2.jpg",
+						additionalData: {
+							something: "Something"
+						}
+					},
+					{
+						mediaType: "video",
+						mediaTitle: "Wings",
+						mediaDescription: "See the wings open from this vantage point",
+						mediaThumbnail: "/stop1/2.jpg",
+						mediaSource: "/stop1/2.jpg",
+						additionalData: {
+							something: "Something"
+						}
+					}
+				]
+			),   
 		audioPath: '/audio/05_galleria.mp3', 
 		stopName: 'BAUMGARTNER AND SCHROEDER GALLERIA', 
 		stopImage: '/stop3.jpg', 
@@ -71,7 +268,40 @@ stops.push(
 stops.push(
 	Alloy.createModel(
 		'audioStops', 
-		{additionalImages:JSON.stringify(['/stop1/1.jpg', '/stop1/2.jpg']), 
+		{additionalImages:JSON.stringify(
+				[
+					{
+						mediaType: "image",
+						mediaTitle: "Calatrava Drawing #1",
+						mediaDescription: "This is an example of one of Santiago Calatravas concept sketches for the Quadracchi Pavillion.",
+						mediaThumbnail: "/stop1/1.jpg",
+						mediaSource: "/stop1/1.jpg",
+						additionalData: {
+							something: "Something"
+						}
+					},
+					{
+						mediaType: "image",
+						mediaTitle: "Calatrava Drawing #1",
+						mediaDescription: "This is an example of one of Santiago Calatravas concept sketches for the Quadracchi Pavillion.",
+						mediaThumbnail: "/stop1/2.jpg",
+						mediaSource: "/stop1/2.jpg",
+						additionalData: {
+							something: "Something"
+						}
+					},
+					{
+						mediaType: "video",
+						mediaTitle: "Wings",
+						mediaDescription: "See the wings open from this vantage point",
+						mediaThumbnail: "/stop1/2.jpg",
+						mediaSource: "/stop1/2.jpg",
+						additionalData: {
+							something: "Something"
+						}
+					}
+				]
+			),   
 		audioPath: '/audio/06_store.mp3', 
 		stopName: 'MUSEUM STORE', 
 		stopImage: '/stops/stop06.jpg', 
@@ -81,7 +311,40 @@ stops.push(
 stops.push(
 	Alloy.createModel(
 		'audioStops', 
-		{additionalImages:JSON.stringify(['/stop1/1.jpg', '/stop1/2.jpg']), 
+		{additionalImages:JSON.stringify(
+				[
+					{
+						mediaType: "image",
+						mediaTitle: "Calatrava Drawing #1",
+						mediaDescription: "This is an example of one of Santiago Calatravas concept sketches for the Quadracchi Pavillion.",
+						mediaThumbnail: "/stop1/1.jpg",
+						mediaSource: "/stop1/1.jpg",
+						additionalData: {
+							something: "Something"
+						}
+					},
+					{
+						mediaType: "image",
+						mediaTitle: "Calatrava Drawing #1",
+						mediaDescription: "This is an example of one of Santiago Calatravas concept sketches for the Quadracchi Pavillion.",
+						mediaThumbnail: "/stop1/2.jpg",
+						mediaSource: "/stop1/2.jpg",
+						additionalData: {
+							something: "Something"
+						}
+					},
+					{
+						mediaType: "video",
+						mediaTitle: "Wings",
+						mediaDescription: "See the wings open from this vantage point",
+						mediaThumbnail: "/stop1/2.jpg",
+						mediaSource: "/stop1/2.jpg",
+						additionalData: {
+							something: "Something"
+						}
+					}
+				]
+			),   
 		audioPath: '/audio/07_calder.mp3', 
 		stopName: 'ALEXANDER CALDER', 
 		stopImage: '/stops/stop07.jpg', 
@@ -90,7 +353,40 @@ stops.push(
 
 stops.push(
 	Alloy.createModel('audioStops', 
-		{additionalImages:JSON.stringify(['/stop1/1.jpg', '/stop1/2.jpg']), 
+		{additionalImages:JSON.stringify(
+				[
+					{
+						mediaType: "image",
+						mediaTitle: "Calatrava Drawing #1",
+						mediaDescription: "This is an example of one of Santiago Calatravas concept sketches for the Quadracchi Pavillion.",
+						mediaThumbnail: "/stop1/1.jpg",
+						mediaSource: "/stop1/1.jpg",
+						additionalData: {
+							something: "Something"
+						}
+					},
+					{
+						mediaType: "image",
+						mediaTitle: "Calatrava Drawing #1",
+						mediaDescription: "This is an example of one of Santiago Calatravas concept sketches for the Quadracchi Pavillion.",
+						mediaThumbnail: "/stop1/2.jpg",
+						mediaSource: "/stop1/2.jpg",
+						additionalData: {
+							something: "Something"
+						}
+					},
+					{
+						mediaType: "video",
+						mediaTitle: "Wings",
+						mediaDescription: "See the wings open from this vantage point",
+						mediaThumbnail: "/stop1/2.jpg",
+						mediaSource: "/stop1/2.jpg",
+						additionalData: {
+							something: "Something"
+						}
+					}
+				]
+			),   
 		audioPath: '/audio/08_reiman.mp3', 
 		stopName: 'REIMAN PEDESTRIAN BRIDGE', 
 		stopImage: '/stop4.jpg', 
@@ -100,7 +396,40 @@ stops.push(
 stops.push(
 	Alloy.createModel(
 		'audioStops', 
-		{additionalImages:JSON.stringify(['/stop1/1.jpg', '/stop1/2.jpg']), 
+		{additionalImages:JSON.stringify(
+				[
+					{
+						mediaType: "image",
+						mediaTitle: "Calatrava Drawing #1",
+						mediaDescription: "This is an example of one of Santiago Calatravas concept sketches for the Quadracchi Pavillion.",
+						mediaThumbnail: "/stop1/1.jpg",
+						mediaSource: "/stop1/1.jpg",
+						additionalData: {
+							something: "Something"
+						}
+					},
+					{
+						mediaType: "image",
+						mediaTitle: "Calatrava Drawing #1",
+						mediaDescription: "This is an example of one of Santiago Calatravas concept sketches for the Quadracchi Pavillion.",
+						mediaThumbnail: "/stop1/2.jpg",
+						mediaSource: "/stop1/2.jpg",
+						additionalData: {
+							something: "Something"
+						}
+					},
+					{
+						mediaType: "video",
+						mediaTitle: "Wings",
+						mediaDescription: "See the wings open from this vantage point",
+						mediaThumbnail: "/stop1/2.jpg",
+						mediaSource: "/stop1/2.jpg",
+						additionalData: {
+							something: "Something"
+						}
+					}
+				]
+			),   
 		audioPath: '/audio/09_garage.mp3', 
 		stopName: 'PARKING GARAGE', 
 		stopImage: '/stop4.jpg', 

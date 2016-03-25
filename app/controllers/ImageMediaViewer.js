@@ -4,11 +4,10 @@ var args = $.args;
 $.ImageMediaViewer.open();
 
 
-var img = Ti.UI.createImageView({image:args.img, width: Titanium.UI.FILL});
+var img = Ti.UI.createImageView({image:args.mediaData.mediaSource, width: Titanium.UI.FILL});
 
 img.addEventListener('click', function(e) {
 	$.ImageMediaViewer.close();
 });
 
 $.scroller.add(img);
-

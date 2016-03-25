@@ -15,16 +15,23 @@ function backButton(e) {
 	$.AudioStop.close();
 }
 
-var imgs = JSON.parse(args.stopModel.attributes.additionalImages);
+var media = JSON.parse(args.stopModel.attributes.additionalImages);
 
-if(imgs.length > 0) {
-	imgs.forEach(function(img) {
+if(media.length > 0) {
+	media.forEach(function(mediaData) {
 		
+		// this should probably be thumbnail instead
 		var i = Ti.UI.createImageView({
-		  image:img
+		  image: mediaData.mediaThumbnail
 		});
 		
-		i.addEventListener('click', mediaClick);
+		//i.addEventListener('click', mediaClick);
+		
+		i.addEventListener('click', function(e) {
+			//img = e.source.getImage();
+			var viewAudioStop = Alloy.createController('ImageMediaViewer', {mediaData:mediaData});
+    
+		});
 		
 		$.stopImagesScroll.addView(i);
 		
