@@ -324,5 +324,5 @@ function playVideo(mediaSource) {
     });
 
     activeMovie.add(closeButton);
-	
+    
 }

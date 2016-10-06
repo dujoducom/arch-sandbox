@@ -6,8 +6,7 @@
 		<View class="container" layout="vertical">
 			
 			<ScrollView id="stopDescriptionScroll" height="75%" width="100%" showVerticalScrollIndicator="true" layout="vertical">
-				
-				
+								
 				<ScrollableView id="stopImagesScroll" showPagingControl="false" height="205" width="100%">
 					<ImageView image="{$.stopModel.stopImage}" id="imgStopCover" width="Titanium.UI.SIZE" top="10" bottom="10" left="10" right="10" />
 				</ScrollableView>
@@ -17,6 +16,7 @@
 					<ImageView image="{$.stopModel.stopImage}" id="imgStopCover" />
 				</ScrollView>
 				-->
+				
 				<Label id="audioStopLabel" textAlign="left" height="Titanium.UI.SIZE" width="80%" top='25' bottom='15' html="{$.stopModel.stopDescription}" />
 				
 			</ScrollView>

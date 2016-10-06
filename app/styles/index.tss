@@ -56,4 +56,8 @@
 	bottom:'10'
 }
 
-
+'#tutorial': {
+	backgroundColor: "#0076bc",
+	color: 'white',
+	height: 'Titanium.UI.SIZE'
+}

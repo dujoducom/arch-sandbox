@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="materialTheme" parent="@style/Theme.AppCompat">
+<item name="colorPrimary">#0076bc</item>
+<item name="colorPrimaryDark">#0069a8</item>
+<item name="colorAccent">#FFFFFF</item>
+<item name="colorControlNormal">#FFFFFF</item>
+<item name="colorControlActivated">#FFFFFF</item>
+<item name="colorControlHighlight">#FFFFFF</item>
+<!--<item name="colorControlHighlight">#008ee2</item>-->
+<item name="colorSwitchThumbNormal">#0076bc</item>
+<item name="android:colorButtonNormal">#0076bc</item>
+<item name="android:colorEdgeEffect">#FFFFFF</item>
+<item name="android:textColorPrimary">#FFFFFF</item>
+</style>
+</resources>
