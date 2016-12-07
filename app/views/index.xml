@@ -1,14 +1,13 @@
 <Alloy>
-
 	<Collection src="audioStops"/>
 	<!--
   <TabGroup backgroundColor="white" title="Architectural Guide" >
             <Tab id="tab1" title="Tab 1">
         -->        
-	<Window id="index" class="container" barColor="#0076bc" title="Architectural Guide" layout="vertical">
+	<Window id="index" class="container" barColor="#0076bc" layout="vertical">
 		<!--<Button id="playVideo" onClick="playVideo" title="something" />-->
 		
-		<ListView id="audioStopList" defaultItemTemplate="stopTemplate" onItemclick="handleClick">
+		<ListView id="audioStopList" defaultItemTemplate="stopTemplate" onItemclick="handleClick" headerDividersEnabled="true">
 
 			<Templates>
 				<ItemTemplate name="stopTemplate">
@@ -18,11 +17,16 @@
 							<Label bindId="stopName" class="lblStopName" />
 						</View>
 					</View>
-					<ImageView class="playButton" image="/play.png" />
+					<!--<ImageView class="playButton" image="/play.png" />-->
 				</ItemTemplate>
 			</Templates>
-
+			<!--
+			<HeaderView>
+						<Label>Select an audio stop from the list</Label>
+			</HeaderView>
+			-->
 			<ListSection dataCollection="audioStops">
+				
 				<ListItem class="audioStopSelection" opacity="1" stopName:text="{stopName}" stopName:model="{alloy_id}" stopImage:image="{stopImage}" stopImage:width="100%"/>
 			</ListSection>
 

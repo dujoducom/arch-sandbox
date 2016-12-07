@@ -33,5 +33,17 @@
 '#audioStopLabel' : {
 	font: { 
        fontSize: '18' 
-    }, 
+    },
+    top: '15',
+    bottom: '15' 
+}
+
+'#lblAudioStopTitle' : {
+	width: '80%',
+	top: '25',
+	paddingBottom: '0',
+	color: '#0076bc',
+	font: {
+		fontSize: '20'
+	}
 }

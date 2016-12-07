@@ -12,5 +12,9 @@
 <item name="android:colorButtonNormal">#0076bc</item>
 <item name="android:colorEdgeEffect">#FFFFFF</item>
 <item name="android:textColorPrimary">#FFFFFF</item>
+<item name="android:windowActionBar">false</item>
+<item name="android:windowNoTitle">true</item>
+<item name="windowActionBar">false</item>
+<item name="windowNoTitle">true</item>
 </style>
 </resources>

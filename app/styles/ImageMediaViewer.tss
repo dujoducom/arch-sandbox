@@ -2,3 +2,10 @@
 ".container" : {
 	backgroundColor: '#1b1b1b'
 }
+
+"#closeImage" : {
+	layout: 'absolute',
+	top: '5',
+	left: '5',
+	opacity: '0.7'
+}

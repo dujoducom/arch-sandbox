@@ -1,4 +1,5 @@
 ".container": {
+	
 	barColor:"#0076bc",
 	titleAttributes: {
 		color:'#0076bc'
@@ -9,18 +10,22 @@
     font: { 
        fontSize: '24' 
     }, 
-    height: '40' 
+    height: '40'
 }
 
 '.lblStopName': {
-	color: 'white',
+	color: 'black',
+	color: '#0076bd',
 	font: {
 		fontSize: '20',
-		fontWeight: 'bold'
+		fontWeight: 'normal'
+		
 	},
 	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
 	left: '15',
-	right: '15'
+	right: '15',
+	top: '5',
+	bottom: '5'
 }
 
 
@@ -29,10 +34,12 @@
 	height: Ti.UI.SIZE,
 	width: Ti.UI.SIZE,
 	//backgroundColor: '#0076bc',
-	//backgroundColor: '#1b1b1b',
-	top: '4',
-	bottom: '4',
-	left: '0'
+	backgroundColor: 'white',
+	// lines above below
+	//top: '4',
+	//bottom: '4',
+	left: '0',
+	elevation: '2'
 }
 
 '.viewBorder' : {
@@ -40,14 +47,14 @@
 	width: Ti.UI.SIZE,
 	backgroundColor: '#0076bc',
 	backgroundColor: '#1b1b1b',
-	opacity: 0.9,
+	opacity: 1,
 	top: '18',
 	left: '0'
 }
 
 
 '#audioStopList': {
-	separatorHeight: '0',
+	separatorHeight: '5',
 	separatorColor: 'white'
 }
 
@@ -60,4 +67,7 @@
 	backgroundColor: "#0076bc",
 	color: 'white',
 	height: 'Titanium.UI.SIZE'
+}
+
+'.audioStopSelection' : {
 }

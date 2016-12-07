@@ -98,7 +98,7 @@ stops.push(
 			),   
 			audioPath: '/audio/03_lake.mp3', 
 			stopName: 'THE LAKE', 
-			stopImage: '/stop1.jpg', 
+			stopImage: '/stops/window_interior.jpg', 
 			stopDescription: 'Straight ahead, through the grand hall, is the lake. Walk with me now, to the prow, which overlooks Lake Michigan. The Museum’s lakeside setting was instrumental in Calatrava’s design for the new building. As he put it, he wanted to “add something to the lakefront. To infuse the building with a certain sensitivity to the culture of the lake—the boats, the sails and the always-changing landscape,” to use his words. As such, Calatrava included numerous nautical references throughout the building: there is the movable sunscreen, or brise soleil, that represents both a sail and the wings of a bird; the pylon of the suspension bridge that is like the abstracted mast of a ship; and the entrance to the parking garage, which mimics the mouth of a whale.<br/><br/>The lake also posed a series structural consideration. The foundation for the building needed to not only support the building, but also resist the upward pressure of the water from the lake below. Rather than pilings or piers, a 2- to 4-foot-thick slab of concrete, called a foundation mat, was specially constructed.<br/><br/>Calatrava’s first design angled even more of the Museum out over the water. But given Wisconsin’s winters and the damage ice and waves can do, the design was impractical; it also brought too much attention to the waterfront, at the expense of the city. Calatrava would later resolve both issues by pulling the prow in and adding a welcoming corridor from the city, The Reiman Pedestrian Bridge.'
 		}));
 
@@ -132,7 +132,7 @@ stops.push(
 			),   
 		audioPath:'/audio/04_windows.mp3', 
 		stopName: 'THE WINDOWS', 
-		stopImage: '/stops/stop04.jpg', 
+		stopImage: '/stops/window_exterior.jpg', 
 		stopDescription:'From this vantage point, looking out at the lake, are you not like a captain at sea, standing at the prow of a grand ship about to set sail? Creating the impression of forward movement is the dramatic cantilever of two stories of floor-to-ceiling windows. The large panes of glass begin their ascent outward one floor below in Café Calatrava, allowing for equally picturesque views of the lakefront while visitors dine. <br /><br />Large windows that curve and lean to such a degree will inevitably shift and required specially made glass and framing. A company in Spain accepted the responsibility for manufacturing the windows in the center, the toughest, with their severe curve and angle. Fewer than 6 percent of the windows in Windhover Hall are what would be called “standard orientation”; the rest are either tilted, curved, or both. Encased in glass, the Quadracci Pavilion has 915 windows, allowing natural light in.<br /><br />Pushing material to their limits and finding new ways to use them are hallmarks of the Spanish architect. Born in Benimàmet near Valencia, Spain, in 1951, Calatrava received his undergraduate degree in architecture from the Polytechnic University of Valencia. He found the emphasis on function in architecture popular at the time frustrating. He loved art and had an interest in aesthetics. His doctoral thesis for his graduate degree in civil engineering at the Institute of Technology in Zurich was a study of structures that fold, or move—components of architecture that could mimic lifelike movement. His study combined rigorous mathematical analysis with a fluid creativity. Calatrava could now solve the engineering problems to make the organic, sculptural designs that have become his signature.'
 	}));
 
@@ -176,7 +176,7 @@ stops.push(
 			),   
 		audioPath: '/audio/05_wings.mp3', 
 		stopName: 'BURKE BRISE SOLEIL', 
-		stopImage: '/stop2.jpg', 
+		stopImage: '/stops/stop01.jpg', 
 		stopDescription:'Turning your back to the lake, direct your eyes skyward, to a glass ceiling that towers 90 feet high. The Burke Brise Soleil, or mechanical sunscreen, is another of the building’s marvels; it was the last major part of constructing the Quadracci Pavilion, and one of the most challenging. Nothing quite like it had ever been built. <br /><br />The moveable, winglike sunscreen is composed of seventy-two steel fins that open to create the Museum’s signature wings. Because the enormous wings span 217 feet, wider than a 747 airplane, they do actually create lift. A firm in Toronto conducted a series of wind-tunnel studies prior to construction to ensure that the Museum would remain on the ground. Sensors automatically close the wings if the wind speed reaches 23 mph. <br /><br />The blades themselves were made in Spain through a laborious, hands-on process. The installation crew and the engineers assembled the wings in a trial run first in Spain to troubleshoot any issues, before executing the process while working high on the spine of the building in Milwaukee.<br /><br />Even transport of these elements to Milwaukee necessitated an extraordinary solution: with the longest blades measuring 105 feet, Russian Antonov 124 cargo ships, among the largest planes in the world, were used. And once in Milwaukee, the bundles of brise soleil fins were so long that, whenever a turn had to be made by the truck carrying them, they had to be lifted by crane from the bed of one truck to another truck waiting around the corner. '
 	}));
 
@@ -209,7 +209,7 @@ stops.push(
 				]
 			),   
 		audioPath: '/audio/05_galleria.mp3', 
-		stopName: 'BAUMGARTNER AND SCHROEDER GALLERIA', 
+		stopName: 'GALLERIA', 
 		stopImage: 'stops/stop03.jpg', 
 		stopDescription: 'Take a stroll again toward the lake and turn down the long arched promenade. Baumgartner Galleria is one of two gallerias, which provide panoramic views of downtown Milwaukee to the west, and Lake Michigan to the east. Recalling buttresses of a Gothic cathedral and the ribs of a whale, the seventy-eight concrete arches of the Baumgartner and Schroeder Gallerias connect through the Baker/Rowland Galleries, the Museum Store, and the Lubar Auditorium. Smooth and precisely angled, the arches were crafted by pouring concrete into specially made wooden forms. Rather than molds constructed from wood slats, which would have left the concrete rough and seamed, the forms were made from solid pieces of wood that were laser-cut and steamed to achieve the proper curve. Gaps were filled and an epoxylike substance was used to line the forms to keep the cement smooth and from picking up the pattern of the wood’s grain. Steel bars were set in the forms to support the complex curves, and were placed in the form before the concrete was poured. <br /> <br />Curves define the majority of the surfaces throughout the pavilion, and steel—2100 tons of it—was needed to reinforce it all. Steve Chamberlain, president of the general contractor on the project, C. G. Schmidt, once commented that the pavilion is “basically a steel building covered with concrete.” While most of the steel is out of sight, you’ll notice that there are steel joints at the base of each rib; these were purposely left exposed. <br /><br >Also kept hidden, beneath the Carrara marble that you’re standing on, is PVC tubing. Six miles of the tubing circulates water to deliver eco-friendly heating and cooling to the building, keeping you comfortable.'
 	}));
@@ -309,7 +309,7 @@ stops.push(
 			),   
 		audioPath: '/audio/08_reiman.mp3', 
 		stopName: 'REIMAN PEDESTRIAN BRIDGE', 
-		stopImage: '/stop4.jpg', 
+		stopImage: '/stops/stop01.jpg', 
 		stopDescription: 'Connecting the Museum to its community is the 280-foot Reiman Pedestrian Bridge, the building’s third architectural marvel. Spanning over the four lanes of Lincoln Memorial Drive, the bridge is suspended from 9 cables attached to a large central mast, whose length is taller than an 18-story building. Extending off the backside of the mast, eighteen cables connect to the ring beam that makes the uninterrupted, open space of Windhover Hall possible. If you recall, this ring beam encircles the Quadracci Pavilion at its ceiling, bearing the weight of the roof and the mast. This feat in counterbalancing works to the favor of the bridge as well. Angled at 48 degrees, the mast holds most of the bridge’s weight, and transfers it downward through the two boomerang-shaped structures on either side of the bridge near the Museum’s main entrance. The precisely calculated distribution of weight allows for the bridge’s seemingly lightweight appearance and thin profile. <br /> <br />Calatrava first gained architectural acclaim in Europe for designing and engineering bridges similar to this. Here, as a neighborly nod to the granite base of the War Memorial to the north, which architect Eero Saarinen designed in 1957, Calatrava used Wisconsin granite pavers to weight down the bridge. '
 	}));
 
@@ -342,7 +342,7 @@ stops.push(
 			),   
 		audioPath: '/audio/09_garage.mp3', 
 		stopName: 'PARKING GARAGE', 
-		stopImage: '/stop4.jpg', 
+		stopImage: '/stops/garage.jpg', 
 		stopDescription: 'Lastly, we will take the stairs down into the garage. The parking garage again includes the repeated, handcrafted architectural ribs, painted white, continuing the visual connection to the building above. This is where the wooden forms for the arches in the gallerias and here in the garage were constructed. It served as an artisans’ workshop of sorts. Whereas most forms on a conventional project can be used up to twelve times, the strict requirements for the concrete arches meant that their forms could only be used three times, with attentive care following each use. <br /><br />Now a beautiful, temperature-controlled garage with some 150 spaces, the garage is lit with lights, as well as natural light, provided by the skylights on the west and east exterior walls. Each skylight also acts like a periscope. Make your way over to one of the skylights and look up. Depending on whether you are on the west or east side of the garage, you should be able to see the downtown skyline or the lake. Calatrava designed the building in such a way so that it reflects the surrounding landscape. Consider this detail a little reminder that great art, like this building, has many layers to discover.'
 	}));
 
@@ -352,11 +352,14 @@ stops.forEach(function(stop) {
 });
 
 setTimeout(function() {
-	$.index.open();	
+	$.index.open();
+	
 }, 500);
 
 
 Alloy.Globals.parent = $.index;
+
+
 
 Alloy.Globals.stopCollection = stopsCollection;
 
