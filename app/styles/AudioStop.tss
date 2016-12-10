@@ -18,6 +18,7 @@
 	left: '10'
 }
 
+
 '#sliderAudioDuration' : {
 	height: Titanium.UI.SIZE,
 	width: Titanium.UI.SIZE,
@@ -35,15 +36,51 @@
        fontSize: '18' 
     },
     top: '15',
-    bottom: '15' 
+    bottom: '15',
+    lineSpacing: {
+    	multiply: '1.25'
+    },
+    paddingBottom: '30'
+}
+'.coverFlowSwipe' : {
+	zIndex: '9999',
+	right: '20',
+	top: '200',
+	scaleX: '1',
+	scaleY: '1'
 }
 
+'.tutorial' : {
+	zIndex: '900'
+}
 '#lblAudioStopTitle' : {
 	width: '80%',
-	top: '25',
+	top: '40',
 	paddingBottom: '0',
 	color: '#0076bc',
 	font: {
 		fontSize: '20'
 	}
+}
+
+'.bodyContainer' : {
+	width: '80%'
+}
+
+
+'.playerControlContainer' : {
+	layout: 'vertical',
+	width: Titanium.UI.SIZE,
+	height: Titanium.UI.SIZE,
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER
+}
+
+'.playerControlLabel' : {
+	width: Titanium.UI.SIZE,
+	font: {
+		fontSize: '18'
+	},
+	color: 'white',
+	top: '5',
+	textAlign: Titanium.UI.TEXT_ALIGNMENT_CENTER
 }

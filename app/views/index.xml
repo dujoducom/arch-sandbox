@@ -4,7 +4,7 @@
   <TabGroup backgroundColor="white" title="Architectural Guide" >
             <Tab id="tab1" title="Tab 1">
         -->        
-	<Window id="index" class="container" barColor="#0076bc" layout="vertical">
+	<Window id="index" class="container" barColor="#0076bc" layout="vertical" fullscreen="true">
 		<!--<Button id="playVideo" onClick="playVideo" title="something" />-->
 		
 		<ListView id="audioStopList" defaultItemTemplate="stopTemplate" onItemclick="handleClick" headerDividersEnabled="true">
@@ -26,10 +26,8 @@
 			</HeaderView>
 			-->
 			<ListSection dataCollection="audioStops">
-				
 				<ListItem class="audioStopSelection" opacity="1" stopName:text="{stopName}" stopName:model="{alloy_id}" stopImage:image="{stopImage}" stopImage:width="100%"/>
 			</ListSection>
-
 		</ListView>
 	</Window>
 			<!--	

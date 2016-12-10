@@ -1,15 +1,20 @@
 <Alloy>
 	<Model src="audioStops" id="stopModel" instance="true" />
 	
-	<Window id="AudioStop" title="{$.stopModel.stopName}" class="container" backButtonTitle="Back">	
-		
+	<Window id="AudioStop" title="{$.stopModel.stopName}" class="container" backButtonTitle="Back" fullscreen="true">	
+		<!--<View class="tutorial">
+			<ImageView image="/swipe_left.png" class="coverFlowSwipe" />
+		</View>-->
 		<View class="container" layout="vertical">
 			
 			<ScrollView id="stopDescriptionScroll" height="75%" width="100%" showVerticalScrollIndicator="true" layout="vertical">
 				<!-- height was 205 -->				
 				<ScrollableView id="stopImagesScroll" showPagingControl="false" height="305" width="100%">
 					<!--<ImageView image="{$.stopModel.stopImage}" id="imgStopCover" width="Titanium.UI.SIZE" top="10" bottom="10" left="10" right="10" />-->
-					<ImageView image="{$.stopModel.stopImage}" />					
+		
+					
+						
+						<ImageView image="{$.stopModel.stopImage}" />
 				</ScrollableView>
 				
 				<!--
@@ -24,22 +29,34 @@
 			
 			<View id="stopPlayerView" layout="vertical" height="25%" width="100%" bottom="0">
 				
-				<View width="Titanium.UI.FILL" height="Titanium.UI.SIZE">
-					<Label id="sliderAudioPosition" top="10" text=""  />
+				<View width="Titanium.UI.FILL" height="Titanium.UI.SIZE" top="5">
+					<Label id="sliderAudioPosition" top="13" text=""  />
 					<Slider id="audioSlider" top="10" min="0" max="100" value="0" onChange="updateLabel"/>
-					<Label id="sliderAudioDuration" top="10" text="" />
+					<Label id="sliderAudioDuration" top="13" text="" />
 				</View>
 				
 				<View width="Titanium.UI.FILL" height="Titanium.UI.FILL" top="10">
 					<View layout="horizontal" width="Titanium.UI.SIZE" height="Titanium.UI.FILL">
 						
-						<ImageView id="btnVolume" image="/btnVolume.png" onClick="volumeButton" height="60%" />
-						<ImageView id="btnBack" image="/btnStart.png" left="15" onClick="startButton" height="60%" />
-						<View left="15" width="Titanium.UI.SIZE" height="Titanium.UI.SIZE">
-							<ImageView id="btnPause" image="/pauseButton.png" onClick="playButton" height="75%" />
-							<ImageView id="btnPlayPause" image="/playButton.png" onClick="playButton" height="75%" />
+						<View class="playerControlContainer" width="20%">
+							<ImageView id="btnVolume" image="/btnVolume.png" onClick="volumeButton" height="50%" />
+							<Label class="playerControlLabel" >VOLUME</Label>
 						</View>
-						<ImageView id="btnHome" image="/btnClose.png" left="15" onClick="backButton" height="60%" />
+						<View class="playerControlContainer" width="20%">
+							<ImageView id="btnBack" image="/btnStart.png" left="15" onClick="startButton" height="50%" />
+							<Label class="playerControlLabel">RESTART</Label>
+						</View>
+						<View class="playerControlContainer" width="24%">
+						<View left="15" width="Titanium.UI.SIZE" height="Titanium.UI.SIZE">
+							<ImageView id="btnPause" image="/pauseButton.png" onClick="playButton" height="65%" />
+							<ImageView id="btnPlayPause" image="/playButton.png" onClick="playButton" height="65%" />
+						</View>
+						<Label class="playerControlLabel">PLAY / PAUSE</Label>
+						</View>
+						<View class="playerControlContainer" width="20%">
+							<ImageView id="btnHome" image="/btnClose.png" left="15" onClick="backButton" height="50%" />
+							<Label class="playerControlLabel" >EXIT</Label>
+						</View>
 						<!--<Button title="BACK" class="defaultButton" onClick="backButton" />-->
 					</View>
 				</View>

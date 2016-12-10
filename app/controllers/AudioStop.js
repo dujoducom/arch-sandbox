@@ -65,7 +65,7 @@ function ms2TimeString(a,k,s,m,h){
   h=a/36e5%24|0,
   (h?(h<10?'0'+h:h)+':':'')+ // optimized
   (m<10?0:'')+m+':'+  // optimized
-  (s<10?0:'')+s
+  (s<10?0:'')+s;
 }
 
 var intervalControl;
@@ -145,7 +145,7 @@ volSlider.addEventListener('change', function(e) {
 
 var sliderContainer = Ti.UI.createView({
 	width: Ti.UI.FILL,
-	height: 200,
+	height: 400,
 	backgroundColor: '#0076bd',
 	layout: 'vertical',
 	bubbleParent: false,

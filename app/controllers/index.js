@@ -176,7 +176,7 @@ stops.push(
 			),   
 		audioPath: '/audio/05_wings.mp3', 
 		stopName: 'BURKE BRISE SOLEIL', 
-		stopImage: '/stops/stop01.jpg', 
+		stopImage: '/stops/stops-large-bries.jpg', 
 		stopDescription:'Turning your back to the lake, direct your eyes skyward, to a glass ceiling that towers 90 feet high. The Burke Brise Soleil, or mechanical sunscreen, is another of the building’s marvels; it was the last major part of constructing the Quadracci Pavilion, and one of the most challenging. Nothing quite like it had ever been built. <br /><br />The moveable, winglike sunscreen is composed of seventy-two steel fins that open to create the Museum’s signature wings. Because the enormous wings span 217 feet, wider than a 747 airplane, they do actually create lift. A firm in Toronto conducted a series of wind-tunnel studies prior to construction to ensure that the Museum would remain on the ground. Sensors automatically close the wings if the wind speed reaches 23 mph. <br /><br />The blades themselves were made in Spain through a laborious, hands-on process. The installation crew and the engineers assembled the wings in a trial run first in Spain to troubleshoot any issues, before executing the process while working high on the spine of the building in Milwaukee.<br /><br />Even transport of these elements to Milwaukee necessitated an extraordinary solution: with the longest blades measuring 105 feet, Russian Antonov 124 cargo ships, among the largest planes in the world, were used. And once in Milwaukee, the bundles of brise soleil fins were so long that, whenever a turn had to be made by the truck carrying them, they had to be lifted by crane from the bed of one truck to another truck waiting around the corner. '
 	}));
 
@@ -277,7 +277,7 @@ stops.push(
 			),   
 		audioPath: '/audio/07_calder.mp3', 
 		stopName: 'ALEXANDER CALDER', 
-		stopImage: '/stops/stop07.jpg', 
+		stopImage: '/stops/stops-large-calder.jpg', 
 		stopDescription: 'Here, just in from the front doors and above the glass surround, is the mobile Red, Black, Blue by Alexander Calder. Santiago Calatrava spotted this work at the Milwaukee County Airport on one of his many trips to the city. He had designed a spectacular building, to host spectacular art exhibitions, but it was this mobile that he wanted as the permanent, signature piece at the entrance to the Museum. The County graciously loaned Calder’s mobile to the Museum long-term. <br /><br />It is easy to see why the mobile appealed to the architect. Its circular forms beautifully echo the rotund design of the glass elevator, as well as the opening in the floor below—and it moves. Calatrava incorporates movement into his architecture because, as he once said: “it is possible, and because it is possible, it is part of our time.” Alexander Calder and Santiago Calatrava are certainly kindred spirits in that they both embrace engineering to bring their art to life.'
 	}));
 
@@ -309,7 +309,7 @@ stops.push(
 			),   
 		audioPath: '/audio/08_reiman.mp3', 
 		stopName: 'REIMAN PEDESTRIAN BRIDGE', 
-		stopImage: '/stops/stop01.jpg', 
+		stopImage: '/stops/stops-large-bridge.jpg', 
 		stopDescription: 'Connecting the Museum to its community is the 280-foot Reiman Pedestrian Bridge, the building’s third architectural marvel. Spanning over the four lanes of Lincoln Memorial Drive, the bridge is suspended from 9 cables attached to a large central mast, whose length is taller than an 18-story building. Extending off the backside of the mast, eighteen cables connect to the ring beam that makes the uninterrupted, open space of Windhover Hall possible. If you recall, this ring beam encircles the Quadracci Pavilion at its ceiling, bearing the weight of the roof and the mast. This feat in counterbalancing works to the favor of the bridge as well. Angled at 48 degrees, the mast holds most of the bridge’s weight, and transfers it downward through the two boomerang-shaped structures on either side of the bridge near the Museum’s main entrance. The precisely calculated distribution of weight allows for the bridge’s seemingly lightweight appearance and thin profile. <br /> <br />Calatrava first gained architectural acclaim in Europe for designing and engineering bridges similar to this. Here, as a neighborly nod to the granite base of the War Memorial to the north, which architect Eero Saarinen designed in 1957, Calatrava used Wisconsin granite pavers to weight down the bridge. '
 	}));
 
@@ -359,8 +359,8 @@ setTimeout(function() {
 
 Alloy.Globals.parent = $.index;
 
-
-
+$.index.actionBar.hide();
+ 
 Alloy.Globals.stopCollection = stopsCollection;
 
 Alloy.Globals.soundVolume = 0.8;
@@ -412,3 +412,16 @@ function playVideo(e) {
 	
 }
 */
+
+Titanium.Platform.addEventListener('battery', function(e){
+  Ti.API.info('The battery state has changed to ' + e.state);
+  Ti.API.info('The battery level is ' + e.level);
+  Ti.API.info('The battery event source is ' + e.source);
+  Ti.API.info('The battery event name ' + e.type);
+});
+
+Titanium.Gesture.addEventListener('shake', function(e){
+  Ti.API.info('SHAKEN!');
+});
+
+Ti.API.info('Hello World!');
