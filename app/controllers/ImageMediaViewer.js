@@ -4,7 +4,10 @@ var args = $.args;
 $.ImageMediaViewer.open();
 
 
-var img = Ti.UI.createImageView({image:args.mediaData.mediaSource, width: Titanium.UI.FILL});
+var img = Ti.UI.createImageView({image:args.mediaData.mediaSource, width: Titanium.UI.SIZE, height: Titanium.UI.SIZE});
+
+$.mediaTitle.html = args.mediaData.mediaTitle;
+$.mediaDesc.html = args.mediaData.mediaDescription;
 
 img.addEventListener('click', function(e) {
 	$.ImageMediaViewer.close();

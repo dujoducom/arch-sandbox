@@ -18,11 +18,16 @@ function backButton(e) {
 var media = JSON.parse(args.stopModel.attributes.additionalImages);
 
 if(media.length > 0) {
+	
 	media.forEach(function(mediaData) {
 		
 		// this should probably be thumbnail instead
 		var i = Ti.UI.createImageView({
-		  image: mediaData.mediaThumbnail
+		  image: mediaData.mediaThumbnail,
+		  height: 260,
+		  top: 15,
+		  borderColor: '#cccccc'
+		  
 		});
 		
 		//i.addEventListener('click', mediaClick);
@@ -43,9 +48,13 @@ if(media.length > 0) {
 			break;
 		}
 		
+		var wrap = Ti.UI.createView({layout: 'vertical'});
+		var bott = Ti.UI.createView({height: 20});
 		
+		wrap.add(i);
+		//wrap.add(bott);
 		
-		$.stopImagesScroll.addView(i);
+		$.stopImagesScroll.addView(wrap);
 		
 	});
 }
@@ -81,16 +90,18 @@ function playButton(e) {
 		$.sliderAudioPosition.text = '00:00';
 		$.audioSlider.max = player.duration;
 		intervalControl = setInterval(updateAudioStatus, 1000);
+		$.playPause.text = 'PAUSE';
 		
 	} else {
 		player.pause();
 		$.btnPlayPause.image = '/playButton.png';
+		$.playPause.text = 'PLAY';
 		isPlaying = false;
 		clearInterval(intervalControl);
 	}
 	
 }
-
+$.playPause.text = 'PAUSE';
 playButton({empty:null});
 
 $.AudioStop.addEventListener('close',function() {
@@ -145,13 +156,14 @@ volSlider.addEventListener('change', function(e) {
 
 var sliderContainer = Ti.UI.createView({
 	width: Ti.UI.FILL,
-	height: 400,
+	height: 300,
 	backgroundColor: '#0076bd',
 	layout: 'vertical',
 	bubbleParent: false,
 	bottom: -200,
 	opacity: 0
 });
+
 
 sliderContainer.add(Ti.UI.createLabel({
 	text:'VOLUME',

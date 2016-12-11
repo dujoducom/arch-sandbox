@@ -8,14 +8,16 @@
 		<View class="container" layout="vertical">
 			
 			<ScrollView id="stopDescriptionScroll" height="75%" width="100%" showVerticalScrollIndicator="true" layout="vertical">
-				<!-- height was 205 -->				
+				<!-- height was 205 -->
+				<View id="additionalMediaContainer">
+				<Label id="lblAdditionalMedia" html="ADDITIONAL MEDIA" />				
 				<ScrollableView id="stopImagesScroll" showPagingControl="false" height="305" width="100%">
 					<!--<ImageView image="{$.stopModel.stopImage}" id="imgStopCover" width="Titanium.UI.SIZE" top="10" bottom="10" left="10" right="10" />-->
-		
-					
-						
-						<ImageView image="{$.stopModel.stopImage}" />
+
+						<!--<ImageView image="{$.stopModel.stopImage}" />-->
 				</ScrollableView>
+				
+				</View>
 				
 				<!--
 				<ScrollView id="stopImagesScrollView" layout="horizontal" showHorizontalScrollIndicator="true" height="200" width="100%">
@@ -51,7 +53,7 @@
 							<ImageView id="btnPause" image="/pauseButton.png" onClick="playButton" height="65%" />
 							<ImageView id="btnPlayPause" image="/playButton.png" onClick="playButton" height="65%" />
 						</View>
-						<Label class="playerControlLabel">PLAY / PAUSE</Label>
+						<Label class="playerControlLabel" id="playPause">PLAY / PAUSE</Label>
 						</View>
 						<View class="playerControlContainer" width="20%">
 							<ImageView id="btnHome" image="/btnClose.png" left="15" onClick="backButton" height="50%" />

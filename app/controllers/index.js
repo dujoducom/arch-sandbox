@@ -9,6 +9,16 @@ stops.push(
 				[
 					{
 						mediaType: "image",
+						mediaTitle: "Milwaukee Art Museum",
+						mediaDescription: "This is an example of one of Santiago Calatravas concept sketches for the Quadracchi Pavillion.",
+						mediaThumbnail: "/stops/stop01.jpg",
+						mediaSource: "/stops/stop01.jpg",
+						additionalData: {
+							something: "Something"
+						}
+					},
+					{
+						mediaType: "image",
 						mediaTitle: "Calatrava Drawing #1",
 						mediaDescription: "This is an example of one of Santiago Calatravas concept sketches for the Quadracchi Pavillion.",
 						mediaThumbnail: "/stop1/1.jpg",
@@ -42,10 +52,10 @@ stops.push(
 				[
 					{
 						mediaType: "image",
-						mediaTitle: "Calatrava Drawing #1",
+						mediaTitle: "Windhover Hall",
 						mediaDescription: "This is an example of one of Santiago Calatravas concept sketches for the Quadracchi Pavillion.",
-						mediaThumbnail: "/stop1/1.jpg",
-						mediaSource: "/stop1/1.jpg",
+						mediaThumbnail: "/stops/stop02.jpg",
+						mediaSource: "/stops/stop02.jpg",
 						additionalData: {
 							something: "Something"
 						}
@@ -76,10 +86,10 @@ stops.push(
 				[
 					{
 						mediaType: "image",
-						mediaTitle: "Calatrava Drawing #1",
+						mediaTitle: "The Lake",
 						mediaDescription: "This is an example of one of Santiago Calatravas concept sketches for the Quadracchi Pavillion.",
-						mediaThumbnail: "/stop1/1.jpg",
-						mediaSource: "/stop1/1.jpg",
+						mediaThumbnail: "/stops/window_interior.jpg",
+						mediaSource: "/stops/window_interior.jpg",
 						additionalData: {
 							something: "Something"
 						}
@@ -110,10 +120,10 @@ stops.push(
 				[
 					{
 						mediaType: "image",
-						mediaTitle: "Calatrava Drawing #1",
-						mediaDescription: "This is an example of one of Santiago Calatravas concept sketches for the Quadracchi Pavillion.",
-						mediaThumbnail: "/stop1/1.jpg",
-						mediaSource: "/stop1/1.jpg",
+						mediaTitle: "The Windows",
+						mediaDescription: "The Windows, as seen from the Cafe Calatrava patio.",
+						mediaThumbnail: "/stops/window_exterior.jpg",
+						mediaSource: "/stops/window_exterior.jpg",
 						additionalData: {
 							something: "Something"
 						}
@@ -146,8 +156,8 @@ stops.push(
 						mediaType: "image",
 						mediaTitle: "Calatrava Drawing #1",
 						mediaDescription: "This is an example of one of Santiago Calatravas concept sketches for the Quadracchi Pavillion.",
-						mediaThumbnail: "/stop1/1.jpg",
-						mediaSource: "/stop1/1.jpg",
+						mediaThumbnail: "/stops/stops-large-bries.jpg",
+						mediaSource: "/stops/stops-large-bries.jpg",
 						additionalData: {
 							something: "Something"
 						}
@@ -190,8 +200,8 @@ stops.push(
 						mediaType: "image",
 						mediaTitle: "Calatrava Drawing #1",
 						mediaDescription: "This is an example of one of Santiago Calatravas concept sketches for the Quadracchi Pavillion.",
-						mediaThumbnail: "/stop1/1.jpg",
-						mediaSource: "/stop1/1.jpg",
+						mediaThumbnail: "/stops/stop03.jpg",
+						mediaSource: "/stops/stop03.jpg",
 						additionalData: {
 							something: "Something"
 						}
@@ -210,7 +220,7 @@ stops.push(
 			),   
 		audioPath: '/audio/05_galleria.mp3', 
 		stopName: 'GALLERIA', 
-		stopImage: 'stops/stop03.jpg', 
+		stopImage: '/stops/stop03.jpg', 
 		stopDescription: 'Take a stroll again toward the lake and turn down the long arched promenade. Baumgartner Galleria is one of two gallerias, which provide panoramic views of downtown Milwaukee to the west, and Lake Michigan to the east. Recalling buttresses of a Gothic cathedral and the ribs of a whale, the seventy-eight concrete arches of the Baumgartner and Schroeder Gallerias connect through the Baker/Rowland Galleries, the Museum Store, and the Lubar Auditorium. Smooth and precisely angled, the arches were crafted by pouring concrete into specially made wooden forms. Rather than molds constructed from wood slats, which would have left the concrete rough and seamed, the forms were made from solid pieces of wood that were laser-cut and steamed to achieve the proper curve. Gaps were filled and an epoxylike substance was used to line the forms to keep the cement smooth and from picking up the pattern of the wood’s grain. Steel bars were set in the forms to support the complex curves, and were placed in the form before the concrete was poured. <br /> <br />Curves define the majority of the surfaces throughout the pavilion, and steel—2100 tons of it—was needed to reinforce it all. Steve Chamberlain, president of the general contractor on the project, C. G. Schmidt, once commented that the pavilion is “basically a steel building covered with concrete.” While most of the steel is out of sight, you’ll notice that there are steel joints at the base of each rib; these were purposely left exposed. <br /><br >Also kept hidden, beneath the Carrara marble that you’re standing on, is PVC tubing. Six miles of the tubing circulates water to deliver eco-friendly heating and cooling to the building, keeping you comfortable.'
 	}));
 
@@ -224,8 +234,8 @@ stops.push(
 						mediaType: "image",
 						mediaTitle: "Calatrava Drawing #1",
 						mediaDescription: "This is an example of one of Santiago Calatravas concept sketches for the Quadracchi Pavillion.",
-						mediaThumbnail: "/stop1/1.jpg",
-						mediaSource: "/stop1/1.jpg",
+						mediaThumbnail: "/stops/stop06.jpg",
+						mediaSource: "/stops/stop06.jpg",
 						additionalData: {
 							something: "Something"
 						}
@@ -257,8 +267,8 @@ stops.push(
 						mediaType: "image",
 						mediaTitle: "Calatrava Drawing #1",
 						mediaDescription: "This is an example of one of Santiago Calatravas concept sketches for the Quadracchi Pavillion.",
-						mediaThumbnail: "/stop1/1.jpg",
-						mediaSource: "/stop1/1.jpg",
+						mediaThumbnail: "/stops/stops-large-calder.jpg",
+						mediaSource: "/stops/stops-large-calder.jpg",
 						additionalData: {
 							something: "Something"
 						}
@@ -289,8 +299,8 @@ stops.push(
 						mediaType: "image",
 						mediaTitle: "Calatrava Drawing #1",
 						mediaDescription: "This is an example of one of Santiago Calatravas concept sketches for the Quadracchi Pavillion.",
-						mediaThumbnail: "/stop1/1.jpg",
-						mediaSource: "/stop1/1.jpg",
+						mediaThumbnail: "/stops/stops-large-bridge.jpg",
+						mediaSource: "/stops/stops-large-bridge.jpg",
 						additionalData: {
 							something: "Something"
 						}
@@ -322,8 +332,8 @@ stops.push(
 						mediaType: "image",
 						mediaTitle: "Calatrava Drawing #1",
 						mediaDescription: "This is an example of one of Santiago Calatravas concept sketches for the Quadracchi Pavillion.",
-						mediaThumbnail: "/stop1/1.jpg",
-						mediaSource: "/stop1/1.jpg",
+						mediaThumbnail: "/stops/garage.jpg",
+						mediaSource: "/stops/garage.jpg",
 						additionalData: {
 							something: "Something"
 						}
@@ -359,7 +369,6 @@ setTimeout(function() {
 
 Alloy.Globals.parent = $.index;
 
-$.index.actionBar.hide();
  
 Alloy.Globals.stopCollection = stopsCollection;
 

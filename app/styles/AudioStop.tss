@@ -8,7 +8,10 @@
 }
 
 '#stopImagesScroll': {
-	backgroundColor: '#1b1b1b'
+	backgroundColor: '#1b1b1b',
+	backgroundColor: '#eeeeee',
+	
+
 }
 
 '#sliderAudioPosition' : {
@@ -62,6 +65,25 @@
 		fontSize: '20'
 	}
 }
+
+'#lblAdditionalMedia' : {
+	width: '80%',
+	top: '20',
+	paddingBottom: '0',
+	color: '#0076bc',
+	font: {
+		fontSize: '20'
+	},
+	
+}
+
+'#additionalMediaContainer' : {
+	height: Titanium.UI.SIZE,
+	backgroundColor: '#eeeeee',
+	borderColor: '#cccccc',
+	layout: 'vertical'
+}
+
 
 '.bodyContainer' : {
 	width: '80%'
